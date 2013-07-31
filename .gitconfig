@@ -1,0 +1,23 @@
+[aliash]
+	st = status
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	com = commit
+	mt = mergetool
+[color]
+	ui = true
+	diff = true
+[user]
+	name = Micah Martin
+	email = micahlmartin@gmail.com
+[mergetool]
+	keepBackup = false
+[diff]
+	tool = p4mergetool
+[difftool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
+[core]
+	editor = subl
+

@@ -29,7 +29,7 @@ alias nagios_update='knife ssh "role:monitoring" "sudo chef-client"'
 
 #add the current git branch to your prompt
 #output: username currentdirectory (gitbranch) $
-#source ~/.git-prompt.sh
+source ~/.git-prompt.sh
 if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
   . /usr/local/etc/bash_completion.d/git-completion.bash; 
   PS1='\[\e[0;32m\]\u\[\e[0m\] \[\e[1;34m\]\w\[\e[0m\]\[\e[0;33m\]$(__git_ps1) \[\e[0m\]\n\$ '

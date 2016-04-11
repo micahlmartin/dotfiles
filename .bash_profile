@@ -34,3 +34,14 @@ if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
   . /usr/local/etc/bash_completion.d/git-completion.bash; 
   PS1='\[\e[0;32m\]\u\[\e[0m\] \[\e[1;34m\]\w\[\e[0m\]\[\e[0;33m\]$(__git_ps1) \[\e[0m\]\n\$ '
 fi
+
+# NVM
+export NVM_DIR="/Users/martinm8/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+nvm use default
+
+# CHRUBY
+if [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ]; then
+  source /usr/local/share/chruby/chruby.sh
+fi
+
